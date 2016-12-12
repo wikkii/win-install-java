@@ -36,7 +36,7 @@ class java-win-install {
 		require => Package['tomcat']
 	}
 	
-#	Works but the registry resource bellow does the same thing
+#	Works but the registry resource bellow does the same thing. DSC also may require winRM service to be enabled.
 #	dsc_registry{ 'telemetry':
 #		dsc_ensure => 'Present',
 #		dsc_key => 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection',
