@@ -9,16 +9,27 @@ NOTE: this module requires puppetlabs/windows module to be installed
 
 this module installs the following packages from chocolatey:
 -gedit
+
 -maven
+
 -git
+
 -vlc
+
 -eclipse
+
 -malwarebytes
+
 -firefox
+
 -flashplayerplugin
+
 -tomcat
+
 -mysql
+
 -mysql.workbench
+
 -putty.portable
 
 ##files
