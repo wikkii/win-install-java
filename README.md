@@ -40,7 +40,9 @@ to set the home page to duckduckgo.com and make firefox show open tabs and windo
 ##services
 
 This module ensures that the following services are running on windows
+
 -mysql
+
 -Tomcat8
 
 ##registry
