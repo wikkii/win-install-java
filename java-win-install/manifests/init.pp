@@ -1,5 +1,5 @@
 class java-win-install {
-	
+include chocolatey	
 	file { 'C:/Program Files/Mozilla Firefox/defaults/pref/autoconfig.js':
 		ensure => 'file',
 		content => template("java-win-install/autoconfig.js.erb"),
@@ -20,9 +20,12 @@ class java-win-install {
 	package {["gedit", "maven",
 		"git", "vlc", "eclipse",
 		"malwarebytes", "firefox",
-	 	"flashplayerplugin", "tomcat",
-		"mysql", "mysql.workbench", "putty.portable"]:}	
-
+	 	"flashplayerplugin",
+		"mysql.workbench", "putty.portable"]:}	
+	
+	package{'mysql':}
+	
+	package{'tomcat':}
 	
 	service {'mysql':
 		ensure => 'running',
