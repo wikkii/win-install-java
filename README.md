@@ -1,9 +1,12 @@
-# win-install-java
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection# win-install-java
 puppet module to install a list of programs and java development environment on windows
 
 To use this module simply copy the java-win-install module folder into your puppet modules folder and add it to your site.pp
 
-NOTE: this module requires puppetlabs/windows module to be installed 
+NOTE: this module requires puppetlabs/windows module to be installed on the master
+
+$ puppet module install puppetlabs/windows
 
 ##packages
 
@@ -47,4 +50,9 @@ This module ensures that the following services are running on windows
 
 ##registry
 
-this module set the windows telemetry level to the lowest possible by creating registry key for it.
+this module set the windows telemetry level to the lowest possible by creating registry key for it and setting it to 0.
+
+The registry key created is:
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection
+HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection\AllowTelemetry
