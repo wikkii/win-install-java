@@ -1,5 +1,5 @@
 
-HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection# win-install-java
+# win-install-java
 puppet module to install a list of programs and java development environment on windows
 
 To use this module simply copy the java-win-install module folder into your puppet modules folder and add it to your site.pp
